@@ -1,0 +1,20 @@
+:root{
+    --dark: #19191B;
+    --violet: #5454D4;
+    --light-yellow: #FEDC5A;
+    --bright-red: #F04037;
+}
+
+*{
+    margin: 0;
+}
+
+html, body, #root{
+    height: 100%;
+    width: 100%;
+}
+
+.App{
+    height: 100%;
+    width: 100%;
+}
