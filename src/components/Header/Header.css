@@ -42,6 +42,7 @@ nav{
     font-size: 18px;
     filter: brightness(70%);
     font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
 }
 
 .navLinkCurrent{
@@ -88,6 +89,7 @@ nav{
     .burgerMenu{
         visibility: initial;
         margin-right: 5%;
+        cursor: pointer;
     }
 
     .menu{

@@ -1,0 +1,7 @@
+.PauseButton{
+    visibility: collapse;
+}
+
+#videoPlayer:hover ~ .PauseButton{
+    visibility: initial;
+}

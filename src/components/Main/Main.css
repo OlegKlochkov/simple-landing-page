@@ -1,0 +1,171 @@
+:root{
+    --dark: #19191B;
+    --violet: #5454D4;
+    --light-yellow: #FEDC5A;
+    --bright-red: #F04037;
+}
+
+@font-face {
+    font-family: Graphik;
+    src: url('./assets/Graphik-Bold.ttf');
+}
+
+.Main{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+
+    background: var(--dark);
+}
+
+h1{
+    font-family: Graphik;
+    font-size: 80px;
+}
+
+.Intro{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+}
+
+.IntroText{
+    width: 40%;
+    position: relative;
+}
+
+.IntroText h1, h3, .VioletButton{
+    position: relative;
+    z-index: 2;
+}
+
+#gradientIntroText{
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.1134) 100%);
+    filter: blur(400px);
+    border-radius: 233.5px;
+    transform: rotate(-45deg);
+    right: 25%;
+    z-index: 1;
+    top: 0%;
+}
+
+.IntroImage{
+    width: 45%;
+}
+
+#happyPerson{
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+#vectorIntro{
+    position: absolute;
+    top: 13%;
+    left: 46%;
+    width: 8%;
+}
+
+#circlesIntro{
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    width: 3%;
+}
+
+#trianglesIntro{
+    position: absolute;
+    bottom: 20%;
+    left: 43%;
+    width: 8%;
+}
+
+#plusIntro{
+    position: absolute;
+    bottom: 25%;
+    right: 8%;
+    width: 3%;
+}
+
+#gradientIntroImage{
+    position: absolute;
+    width: 47%;
+    height: 150%;
+    bottom: -45%;
+    left: 64%;
+    background: linear-gradient(180deg, rgba(251, 168, 28, 0.1066) 0%, rgba(224, 86, 136, 0.0615) 100%);
+    filter: blur(300px);
+    border-radius: 233.5px;
+    transform: rotate(65.71deg);
+}
+
+h3{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 21px;
+}
+
+.VioletButton{
+    width: 45%;
+    height: 58px;
+    text-align: center;
+    border: thin solid transparent;
+    border-radius: 4px;
+    background: var(--violet);
+    color: white;
+    margin-top: 5%;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+
+.VioletButton img{
+    margin-left: 5%;
+}
+
+.VideoPart{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.VideoText{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.VideoText h3{
+    width: 40%;
+}
+
+.Video{
+    position: relative;
+}
+
+.Video video{
+    width: 100%;
+}
+
+#playButton{
+    position: absolute;
+    top: calc(50% - 67px);
+    left: calc(50% - 67px);
+}
