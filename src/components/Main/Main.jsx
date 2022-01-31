@@ -9,11 +9,51 @@ import Triangles from './assets/triangles.svg';
 import Plus from './assets/plus.svg';
 import VideoPlaceholder from './assets/videoPlaceholder.png';
 import Video from './assets/videoPlaceholder.mp4'
+import Development from './assets/development.svg';
+import UIUX from './assets/ui_ux.svg';
+import Graphic from './assets/graphic.svg';
+import Motion from './assets/motion.svg';
+import Photography from './assets/photography.svg';
+import Videography from './assets/videography.svg';
 
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import React, { useState } from 'react';
 
 function Main() {
+
+    const services = [
+        {
+            icon: Development,
+            name: 'Development',
+            description: 'Create a platform with the best and coolest quality from us.'
+        },
+        {
+            icon: UIUX,
+            name: 'UI/UX Designer',
+            description: 'We provide UI/UX Design services, and of course with the best quality'
+        },
+        {
+            icon: Graphic,
+            name: 'Graphic Designer',
+            description: 'We provide Graphic Design services, with the best designers'
+        },
+        {
+            icon: Motion,
+            name: 'Motion Graphic',
+            description: 'Create a platform with the best and coolest quality from us.'
+        },
+        {
+            icon: Photography,
+            name: 'Photography',
+            description: 'We provide Photography services, and of course with the best quality'
+        },
+        {
+            icon: Videography,
+            name: 'Videography',
+            description: 'Create a platform with the best and coolest quality from us.'
+        }
+    ]
+
     return (
         <div className="Main">
                 <div className="Intro">
@@ -58,7 +98,23 @@ function Main() {
                         <VideoPlayer src={Video} poster={VideoPlaceholder} play={Play} pause={Pause} />
                     </div>
                 </div>
-            <div className="Services"></div>
+            <div className="Services">
+                <h1>
+                    The Service We Provide For You
+                </h1>
+                <div className="ServicesDesc">
+                    {services.map(event => {
+                        return(
+                            <div className="ServicesDescElement">
+                                <img className='ServicesIcon' src={event.icon} alt={event.name}/>
+                                <h2 className='ServicesName'>{event.name}</h2>
+                                <h3 className='ServicesText'>{event.description}</h3>
+                            </div>
+                        )
+
+                    })}
+                </div>
+            </div>
             <div className="Portfolio"></div>
             <div className="ContactUs"></div>
         </div>

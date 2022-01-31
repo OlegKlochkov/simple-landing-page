@@ -169,3 +169,38 @@ h3{
     top: calc(50% - 67px);
     left: calc(50% - 67px);
 }
+
+.Services{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.ServicesDesc{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 10%;
+}
+
+.ServicesDescElement{
+    width: 25%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ServicesIcon, .ServicesName, .ServicesText{
+    margin-bottom: 10%;
+    text-align: center;
+}
