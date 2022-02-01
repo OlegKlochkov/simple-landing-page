@@ -15,6 +15,9 @@ import Graphic from './assets/graphic.svg';
 import Motion from './assets/motion.svg';
 import Photography from './assets/photography.svg';
 import Videography from './assets/videography.svg';
+import Portfolio1 from './assets/portfolio1.png';
+import Portfolio2 from './assets/portfolio2.png';
+import Portfolio3 from './assets/portfolio3.png';
 
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import React, { useState } from 'react';
@@ -114,9 +117,31 @@ function Main() {
 
                     })}
                 </div>
+
+                <img src={Triangles} alt="" id="trianglesServices" />
+                <img src={Plus} alt="" id="plusServices1" />
+                <img src={Plus} alt="" id="plusServices2" />
             </div>
-            <div className="Portfolio"></div>
-            <div className="ContactUs"></div>
+            <div className="Portfolio">
+                <h1>Our Awesome Portfolio</h1>
+                <div className="PortfolioDemos">
+                    <img id='Demo1' src={Portfolio1} alt="Demo1" />
+                    <img id='Demo2' src={Portfolio2} alt="Demo2" />
+                    <img id='Demo3' src={Portfolio3} alt="Demo3" />
+                </div>
+                
+                <img src={Vector} alt="" id="vectorPortfolio" />
+                <img src={Circles} alt="" id="circlesPortfolio" />
+            </div>
+            <div className="ContactUs">
+                <h1>Contact us for the service you want to use</h1>
+                <button className="VioletButton">
+                    Contact us
+                </button>
+
+                <img src={Plus} alt="" id="plusContact" />
+                <img src={Circles} alt="" id="circlesContact" />
+            </div>
         </div>
     );
 }

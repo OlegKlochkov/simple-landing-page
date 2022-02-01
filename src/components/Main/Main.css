@@ -3,6 +3,7 @@
     --violet: #5454D4;
     --light-yellow: #FEDC5A;
     --bright-red: #F04037;
+    --dark-gray: #1E1E20;
 }
 
 @font-face {
@@ -27,7 +28,7 @@
 
 h1{
     font-family: Graphik;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .Intro{
@@ -43,6 +44,10 @@ h1{
 .IntroText{
     width: 40%;
     position: relative;
+}
+
+.IntroText h1{
+    font-size: 80px;
 }
 
 .IntroText h1, h3, .VioletButton{
@@ -129,6 +134,7 @@ h3{
 
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .VioletButton img{
@@ -150,6 +156,8 @@ h3{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 3%;
 }
 
 .VideoText h3{
@@ -177,6 +185,14 @@ h3{
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    text-align: center;
+    max-height: 80vh;
+
+    position: relative;
+}
+
+.Services h1{
+    width: 60%;
 }
 
 .ServicesDesc{
@@ -203,4 +219,128 @@ h3{
 .ServicesIcon, .ServicesName, .ServicesText{
     margin-bottom: 10%;
     text-align: center;
+}
+
+#trianglesServices{
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    width: 8%;
+}
+
+#plusServices1{
+    position: absolute;
+    transform: rotate(-31.42deg);
+    top: 12%;
+    right: 4%;
+    width: 3%;
+}
+
+#plusServices2{
+    position: absolute;
+    transform: rotate(25.34deg);
+    bottom: -10%;
+    left: 0%;
+    width: 3%;
+}
+
+.Portfolio{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    position: relative;
+}
+
+.Portfolio h1{
+    width: 100%;
+    font-size: 58px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.PortfolioDemos{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 545px;
+}
+
+#Demo1, #Demo2, #Demo3{
+    padding: 2%;
+    border: thin solid #1E1E20;
+    border-radius: 14px;
+    margin: 1%;
+    max-width: 25vw;
+}
+
+#Demo1{
+    align-self: flex-start;
+}
+
+#Demo2{
+    align-self: center;
+}
+
+#Demo3{
+    align-self: flex-end;
+}
+
+#vectorPortfolio{
+    position: absolute;
+    bottom: -10%;
+    left: -1%;
+    width: 8%;
+}
+
+#circlesPortfolio{
+    position: absolute;
+    top: 6%;
+    right: 10%;
+    width: 3%;
+
+    transform: rotate(-27.37deg);
+}
+
+.ContactUs{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--dark-gray);
+    padding: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    position: relative;
+}
+
+.ContactUs h1{
+    width: 60%;
+}
+
+.ContactUs .VioletButton{
+    margin: 0;
+    width: 15%;
+}
+
+#plusContact{
+    position: absolute;
+    top: 10%;
+    right: 12%;
+    width: 2%;
+}
+
+
+#circlesContact{
+    position: absolute;
+    bottom: 10%;
+    left: 14%;
+    width: 3%;
 }
