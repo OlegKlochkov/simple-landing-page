@@ -1,22 +1,22 @@
 import './VideoPlayer.css';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 function VideoPlayer(props) {
     
     const [videoPlaying, setVideoPlaying] = useState(false);
+    const video = useRef(null);
     function playOrPauseVideo(actionName){
-        const video = document.getElementById('videoPlayer');
         setVideoPlaying(!videoPlaying);
         if(actionName){
-            video.play();
+            video.current.play();
         }else{
-            video.pause();
+            video.current.pause();
         }
     }
     
     return (
         <div className="VideoPlayer">
-            <video id='videoPlayer' src={props.src} poster={props.poster}></video>
+            <video id='videoPlayer' src={props.src} poster={props.poster} ref={video}></video>
             <img id='playButton' 
                 className={!videoPlaying ? 'PlayButton' : 'PauseButton'}
                 src={!videoPlaying ? props.play : props.pause}
