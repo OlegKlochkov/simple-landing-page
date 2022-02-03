@@ -15,7 +15,7 @@
     background: var(--dark);
 }
 
-.Logo{
+.Header .Logo{
     height: 100%;
     width: 10%;
     display: flex;
@@ -29,7 +29,7 @@ h2{
     font-family: 'Montserrat', sans-serif;
 }
 
-nav{
+.Header nav{
     width: 28%;
     height: 100%;
     display: flex;
@@ -66,18 +66,18 @@ nav{
     visibility: collapse;
 }
 
-@media screen and (max-width: 1100px){
-    nav{
+@media screen and (max-width: 1100px) /* and (min-width: 550px) */{
+    .Header nav{
         width: 50%;
     }
 }
 
 @media screen and (max-width: 550px){
-    nav, .navButton{
+    .Header nav, .navButton{
         display: none;
     }
 
-    .Logo{
+    .Header .Logo{
         width: 30%;
         margin-left: 5%;
     }
@@ -102,6 +102,7 @@ nav{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        z-index: 2;
     }
 
     .navLink, .navLinkCurrent{

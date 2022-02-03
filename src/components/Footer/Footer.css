@@ -14,7 +14,7 @@
     background: var(--dark);
 }
 
-.Logo{
+.Footer .Logo{
     height: 100%;
     width: 10%;
     display: flex;
@@ -28,7 +28,7 @@ h2{
     font-family: 'Montserrat', sans-serif;
 }
 
-nav{
+.Footer nav{
     width: 28%;
     height: 100%;
     display: flex;
@@ -48,4 +48,10 @@ nav{
     font-size: 16px;
     filter: brightness(70%);
     font-family: 'Nunito Sans', sans-serif;
+}
+
+@media screen and (max-width: 1600px){
+    .Footer nav{
+        width: 50%;
+    }
 }

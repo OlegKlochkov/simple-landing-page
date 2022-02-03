@@ -14,9 +14,6 @@
 .Main{
     width: 100%;
     overflow-x: hidden;
-}
-
-.Main{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -24,11 +21,19 @@
     color: white;
 
     background: var(--dark);
+    position: relative;
+    z-index: 1;
 }
 
 h1{
     font-family: Graphik;
     font-size: 60px;
+}
+
+h3{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 21px;
+    filter: brightness(70%);
 }
 
 .Intro{
@@ -37,6 +42,7 @@ h1{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2%;
 
     width: 90%;
 }
@@ -48,6 +54,7 @@ h1{
 
 .IntroText h1{
     font-size: 80px;
+    margin-bottom: 5%;
 }
 
 .IntroText h1, h3, .VioletButton{
@@ -117,11 +124,6 @@ h1{
     transform: rotate(65.71deg);
 }
 
-h3{
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 21px;
-}
-
 .VioletButton{
     width: 45%;
     height: 58px;
@@ -186,7 +188,6 @@ h3{
     align-items: center;
     margin-top: 10%;
     text-align: center;
-    max-height: 80vh;
 
     position: relative;
 }
@@ -343,4 +344,153 @@ h3{
     bottom: 10%;
     left: 14%;
     width: 3%;
+}
+
+Slider{
+    display: none;
+}
+
+@media screen and (max-width: 550px){
+
+    /* Intro */
+
+    .Intro{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        margin-top: 5%;
+    }
+
+    .IntroText{
+        width: 100%;
+    }
+
+    .IntroText h1{
+        font-size: 42px;
+        margin-bottom: 10%;
+    }
+
+    .IntroText h3{
+        font-size: 16px;
+        margin-bottom: 10%;
+    }
+
+    .IntroImage{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+    }
+
+    .VioletButton{
+        height: 44px;
+        font-size: 16px;
+    }
+
+    #happyPerson{
+        width: 80%;
+    }
+
+    #vectorIntro{
+        position: absolute;
+        top: 12%;
+        left: 4%;
+        width: 15%;
+    }
+    
+    #circlesIntro{
+        position: absolute;
+        top: 6%;
+        right: 8%;
+        width: 10%;
+    }
+    
+    #trianglesIntro{
+        position: absolute;
+        bottom: 2%;
+        left: 4%;
+        width: 15%;
+    }
+    
+    #plusIntro{
+        position: absolute;
+        bottom: 16%;
+        right: 14%;
+        width: 6%;
+    }
+
+    /* VideoPart */
+
+    .VideoText{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .VideoText h1{
+        font-size: 36px;
+    }
+
+    .VideoText h3{
+        font-size: 16px;
+        width: 100%;
+
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #playButton{
+        height: 25%;
+        width: 25%;
+        top: 37.5%;
+        left: 37.5%;
+    }
+
+    /* Services */
+    .Services{
+        padding-top: 20%;
+        padding-bottom: 10%;
+    }
+
+    .Services h1{
+        font-size: 36px;
+        width: 100%;
+        text-align: start;
+    }
+
+    .ServicesDesc{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .ServicesDescElement{
+        width: 100%;
+        margin: 0;
+        margin-top: 10%;
+    }
+
+    #trianglesServices{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 15%;
+    }
+
+    #plusServices1{
+        position: absolute;
+        transform: none;
+        top: 8%;
+        right: -2%;
+        width: 5%;
+    }
+    
+    #plusServices2{
+        position: absolute;
+        transform: none;
+        bottom: 0%;
+        left: 2%;
+        width: 5%;
+    }
 }
