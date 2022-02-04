@@ -1,0 +1,17 @@
+.Slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SliderButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.SliderButtons .Usable{
+    cursor: pointer;
+}

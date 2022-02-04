@@ -4,13 +4,16 @@
 }
 
 .Header{
-    height: 10%;
+    height: 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     color: white;
+    position: fixed;
+    top: 0%;
+    z-index: 2;
 
     background: var(--dark);
 }

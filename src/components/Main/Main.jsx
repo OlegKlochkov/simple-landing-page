@@ -18,8 +18,13 @@ import Videography from './assets/videography.svg';
 import Portfolio1 from './assets/portfolio1.png';
 import Portfolio2 from './assets/portfolio2.png';
 import Portfolio3 from './assets/portfolio3.png';
+import Previous from './assets/Previous.svg';
+import PreviousDisabled from './assets/PreviousDisabled.svg';
+import Next from './assets/Next.svg';
+import NextDisabled from './assets/NextDisabled.svg';
 
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
+import Slider from '../Slider/Slider';
 import React, { useState } from 'react';
 
 function Main() {
@@ -55,7 +60,9 @@ function Main() {
             name: 'Videography',
             description: 'Create a platform with the best and coolest quality from us.'
         }
-    ]
+    ];
+
+    const images = [Portfolio1, Portfolio2, Portfolio3];
 
     return (
         <div className="Main">
@@ -129,6 +136,7 @@ function Main() {
                     <img id='Demo2' src={Portfolio2} alt="Demo2" />
                     <img id='Demo3' src={Portfolio3} alt="Demo3" />
                 </div>
+                <Slider images={images} Previous={Previous} DisabledPrevious={PreviousDisabled} Next={Next} DisabledNext={NextDisabled}/>
                 
                 <img src={Vector} alt="" id="vectorPortfolio" />
                 <img src={Circles} alt="" id="circlesPortfolio" />

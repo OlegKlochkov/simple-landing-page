@@ -3,13 +3,15 @@
 }
 
 .Footer{
-    height: 10%;
+    height: 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     color: white;
+    position: relative;
+    z-index: 2;
 
     background: var(--dark);
 }
@@ -53,5 +55,29 @@ h2{
 @media screen and (max-width: 1600px){
     .Footer nav{
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .Footer, .Footer nav{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        height: initial;
+    }
+
+    .Footer .navLink, #copyright{
+        font-size: 18px;
+        border-bottom: none;
+    }
+
+    .Footer .Logo, .Footer .navLink, #copyright{
+        margin-bottom: 5%;
+    }
+
+    .Footer .Logo{
+        margin-top: 30%;
     }
 }

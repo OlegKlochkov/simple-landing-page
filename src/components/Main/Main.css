@@ -22,6 +22,7 @@
 
     background: var(--dark);
     position: relative;
+    top: 100px;
     z-index: 1;
 }
 
@@ -318,6 +319,7 @@ h3{
     padding: 10%;
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 100px;
 
     position: relative;
 }
@@ -346,11 +348,15 @@ h3{
     width: 3%;
 }
 
-Slider{
+.Main .Slider{
     display: none;
 }
 
 @media screen and (max-width: 550px){
+
+    h1{
+        font-size: 36px;
+    }
 
     /* Intro */
 
@@ -429,10 +435,6 @@ Slider{
         justify-content: center;
     }
 
-    .VideoText h1{
-        font-size: 36px;
-    }
-
     .VideoText h3{
         font-size: 16px;
         width: 100%;
@@ -455,7 +457,6 @@ Slider{
     }
 
     .Services h1{
-        font-size: 36px;
         width: 100%;
         text-align: start;
     }
@@ -492,5 +493,84 @@ Slider{
         bottom: 0%;
         left: 2%;
         width: 5%;
+    }
+
+    /*Portfolio*/
+
+    .Portfolio{
+        padding-bottom: 30%;
+        margin-top: 20%;
+    }
+
+    .Portfolio h1{
+        font-size: 36px;
+        font-family: Graphik;
+    }
+
+    .PortfolioDemos{
+        display: none;
+    }
+
+    .Main .Slider{
+        display: flex;
+    }
+
+    .Main .Slider, .Main .SliderButtons{
+        margin-top: 20%;
+    }
+
+    .Main .Slider .SliderButtons{
+        width: 26%;
+        justify-content: space-between;
+    }
+
+    #vectorPortfolio{
+        position: absolute;
+        bottom: 8%;
+        left: -1%;
+        width: 20%;
+    }
+    
+    #circlesPortfolio{
+        position: absolute;
+        top: 8%;
+        right: 5%;
+        width: 12%;
+    
+        transform: rotate(-20.89deg);
+    }
+
+    /* Contact Us */
+
+    .ContactUs{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .ContactUs h1{
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .ContactUs .VioletButton{
+        width: 50%;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    #plusContact{
+        position: absolute;
+        top: 4%;
+        right: 7%;
+        width: 6%;
+    }
+    
+    
+    #circlesContact{
+        position: absolute;
+        bottom: 2%;
+        left: 2%;
+        width: 10%;
     }
 }
