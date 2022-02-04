@@ -25,7 +25,7 @@ import NextDisabled from './assets/NextDisabled.svg';
 
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import Slider from '../Slider/Slider';
-import React, { useState } from 'react';
+import React from 'react';
 
 function Main() {
 
