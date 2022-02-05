@@ -6,12 +6,20 @@
     visibility: initial;
 }
 
+.PauseButton, .PlayButton{
+    cursor: pointer;
+}
+
 .PauseButton:hover{
     visibility: initial;
 }
 
 @media screen and (max-width: 550px){
-    .PauseButton{
-        visibility: hidden;
+    #videoPlayer:hover ~ .PauseButton{
+        visibility: collapse;
+    }
+    
+    .PauseButton:hover{
+        visibility: collapse;
     }
 }
