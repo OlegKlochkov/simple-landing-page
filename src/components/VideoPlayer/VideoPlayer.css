@@ -5,3 +5,13 @@
 #videoPlayer:hover ~ .PauseButton{
     visibility: initial;
 }
+
+.PauseButton:hover{
+    visibility: initial;
+}
+
+@media screen and (max-width: 550px){
+    .PauseButton{
+        visibility: hidden;
+    }
+}
